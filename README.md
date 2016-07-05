@@ -1,6 +1,8 @@
 Ansible Role: Zram Config
 =========================
 
+[![Build Status](https://travis-ci.org/gantsign/ansible-role-zram-config.svg?branch=master)](https://travis-ci.org/gantsign/ansible-role-zram-config)
+
 Role to install Zram Config for compressed RAM swap.
 
 Requirements

@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - zram-config
+    - ansible-role-zram-config

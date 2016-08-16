@@ -1,10 +1,12 @@
 ---
 - name: install linux-image-extra
+  become: yes
   apt:
     name: "linux-image-extra-{{ ansible_kernel }}"
     state: present
 
 - name: install zram-config
+  become: yes
   apt:
     name: zram-config
     state: present

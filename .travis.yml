@@ -30,7 +30,7 @@ script:
   - '$exec_dkr bash -c "cd /ansible/$repo_name && ansible-playbook -i tests/inventory --syntax-check tests/test.yml"'
 
   # Run the playbook with ansible-playbook
-  - '$exec_dkr bash -c "cd /ansible/$repo_name && sudo ansible-playbook -i tests/inventory tests/test.yml"'
+  - '$exec_dkr bash -c "cd /ansible/$repo_name && ansible-playbook -i tests/inventory tests/test.yml"'
 
   # Check the zram-config is installed
   - '$exec_dkr ls -l /etc/init/zram-config.conf'

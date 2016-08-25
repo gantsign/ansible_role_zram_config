@@ -7,3 +7,6 @@ docker:
   - name: ansible-role-zram-config-01
     image: ubuntu
     image_version: '14.04'
+
+testinfra:
+  hosts: ansible-role-zram-config-01

@@ -18,7 +18,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-     - { role: gantsign.zram-config }
+    - role: gantsign.zram-config
 ```
 
 More Roles From GantSign

@@ -1,9 +1,9 @@
 Ansible Role: Zram Config
 =========================
 
-[![Build Status](https://travis-ci.org/gantsign/ansible-role-zram-config.svg?branch=master)](https://travis-ci.org/gantsign/ansible-role-zram-config)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.zram--config-blue.svg)](https://galaxy.ansible.com/gantsign/zram-config)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-zram-config/master/LICENSE)
+[![Build Status](https://travis-ci.org/gantsign/ansible_role_zram_config.svg?branch=master)](https://travis-ci.org/gantsign/ansible_role_zram_config)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.zram__config-blue.svg)](https://galaxy.ansible.com/gantsign/zram_config)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible_role_zram_config/master/LICENSE)
 
 Role to install Zram Config for compressed RAM swap.
 
@@ -30,7 +30,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   roles:
-    - role: gantsign.zram-config
+    - role: gantsign.zram_config
 ```
 
 More Roles From GantSign

@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: zram-config
   author: John Freeman
   description: Role for installing zram-config for compressed RAM swap.
   company: GantSign Ltd.

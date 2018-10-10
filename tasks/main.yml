@@ -8,6 +8,5 @@
 - name: install zram-config
   become: yes
   apt:
-    name: '{{ item }}'
+    name: '{{ zram_config_packages }}'
     state: present
-  with_items: '{{ zram_config_packages }}'

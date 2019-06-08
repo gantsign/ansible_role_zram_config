@@ -3,3 +3,5 @@
   hosts: all
   roles:
     - role: ansible_role_zram_config
+      zram_config_min_free_kbytes: 65536
+      zram_config_swappiness: 10

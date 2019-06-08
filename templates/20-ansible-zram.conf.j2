@@ -1,0 +1,7 @@
+{{ ansible_managed | comment }}
+{% if zram_config_swappiness is defined and zram_config_swappiness not in (None, '', omit) %}
+vm.swappiness={{ zram_config_swappiness }}
+{% endif %}
+{% if zram_config_min_free_kbytes is defined and zram_config_min_free_kbytes not in (None, '', omit) %}
+vm.min_free_kbytes={{ zram_config_min_free_kbytes }}
+{% endif %}

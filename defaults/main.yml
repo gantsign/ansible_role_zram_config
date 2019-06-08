@@ -1,2 +1,9 @@
 ---
-# defaults file for zram_config
+# Reduces the chance of Zram causing the OS to freeze when low on RAM.
+# e.g. 65536
+zram_config_min_free_kbytes:
+
+# A value from 0 to 100. Setting this to a low value reduces swap use.
+# Setting this to low value will also reduce OS freezes due to Zram.
+# e.g. 10
+zram_config_swappiness:

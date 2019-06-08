@@ -10,3 +10,12 @@
   apt:
     name: '{{ zram_config_packages }}'
     state: present
+
+- name: write sysctl config
+  become: yes
+  template:
+    src: 20-ansible-zram.conf.j2
+    dest: /etc/sysctl.d/20-ansible-zram.conf
+    owner: root
+    group: root
+    mode: u=rw,go=r

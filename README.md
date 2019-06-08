@@ -24,6 +24,23 @@ Requirements
 
         * Note: other versions are likely to work but have not been tested.
 
+Role Variables
+--------------
+
+The following variables will change the behavior of this role (default values
+are shown below):
+
+```yaml
+# Reduces the chance of Zram causing the OS to freeze when low on RAM.
+# e.g. 65536
+zram_config_min_free_kbytes:
+
+# A value from 0 to 100. Setting this to a low value reduces swap use.
+# Setting this to low value will also reduce OS freezes due to Zram.
+# e.g. 10
+zram_config_swappiness:
+```
+
 Example Playbook
 ----------------
 
@@ -31,6 +48,8 @@ Example Playbook
 - hosts: servers
   roles:
     - role: gantsign.zram_config
+      zram_config_min_free_kbytes: 65536
+      zram_config_swappiness: 10
 ```
 
 More Roles From GantSign

@@ -10,7 +10,7 @@ Role to install Zram Config for compressed RAM swap.
 Requirements
 ------------
 
-* Ansible >= 2.6
+* Ansible >= 2.7
 
 * Linux Distribution
 

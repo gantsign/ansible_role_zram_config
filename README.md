@@ -7,6 +7,9 @@ Ansible Role: Zram Config
 
 Role to install Zram Config for compressed RAM swap.
 
+**Deprecation notice:** this role is now deprecated, consider using
+[gantsign.zswap](https://galaxy.ansible.com/gantsign/zswap) instead.
+
 Requirements
 ------------
 
